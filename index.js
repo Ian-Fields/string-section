@@ -1,4 +1,4 @@
-function stringIncludes(haystack, needle) {
+function stringIncludes('haystack', 'needle') {
   for (let i = 0; i < haystack.length; i++) {
     if (haystack.slice(i, needle.length) === needle) {
       return true
@@ -8,11 +8,11 @@ function stringIncludes(haystack, needle) {
   return false
 }
 
-function countLetter(haystack, needle) {
+function countLetter('haystack', 'needle') {
   let count = 0
 
   while (haystack.length) {
-    if (haystack.shift() === needle) {
+    if (haystack.shift() === 'needle') {
       count++
     }
   }
@@ -20,7 +20,7 @@ function countLetter(haystack, needle) {
   return count
 }
 
-function camelCase(sentence) {
+function camelCase('sentence') {
   const arr = sentence.split(' ')
 
   for (let i = 0; i < arr.length; i++) {
